@@ -3,13 +3,29 @@
 .biografi h1 {
 	text-shadow: 5px 5px 10px rgba (0,0,0,0.5);
 }
-.slides img 
-{
-	max-width: 100% ;
+.slider img {
+	height: 10px;
+}
+.biografi, {
+	padding: 60px;
+	height: 100px;
+
+}
+.
+.biografi-container {
+	height: 500px;
+	padding: 60px;
+}
+.biografi h3 {
+	padding-top: 20px;
+}
+.biografi {
+	padding: 97px;
+	height: 500px%
 }
 
 .parallax-container {
-	height: 330%;
+	height: 580px;
 }
 
 .parallax img {
@@ -17,16 +33,20 @@
 	opacity: 0.5 !important;
 }
 
-.biografi img {
+.tentangkami img {
 	max-width: 145px;
 	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
 
 }
-
-section,footer {
-	padding: 92px; 0;
+.roomtour {
+	padding-top: 10px;
 }
+
+
 .nav-wrapper img {
 	margin-top: -10px;
 
+}
+.contact {
+	padding-top: 10px;
 }
