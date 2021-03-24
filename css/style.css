@@ -3,9 +3,9 @@
 .biografi h1 {
 	text-shadow: 5px 5px 10px rgba (0,0,0,0.5);
 }
-.slider img {
-	height: 10px;
-}
+
+
+
 .biografi, {
 	padding: 60px;
 	height: 100px;
@@ -14,13 +14,13 @@
 .
 .biografi-container {
 	height: 500px;
-	padding: 60px;
+	
 }
 .biografi h3 {
 	padding-top: 20px;
 }
 .biografi {
-	padding: 97px;
+	
 	height: 500px%
 }
 
@@ -29,7 +29,8 @@
 }
 
 .parallax img {
-	filter: grayscale(1);
+	width: 100%
+	filter: grayscale(5);
 	opacity: 0.5 !important;
 }
 
