@@ -55,30 +55,30 @@
       <ul class="slides">
         <li>
           <img src="img/slider/22.jpg"> <!-- random image -->
-          <div class="caption center-align white-text text-darken-3">
-            <h2 class="white-text">Selamat Datang</h2>
-            <h5 class="white-text text-darken-3 text-lighten-3">Salam Sehat Milagros.</h5>
+          <div class="caption center-align white-text text-lighten-3">
+            <h2 class="white-text"><strong>Selamat Datang</strong></h2>
+            <h5 class="white-text"><strong>Salam Sehat Milagros.</strong></h5>
           </div>
         </li>
         <li>
-          <img src="img/slider/33.jpg"> <!-- random image -->
-          <div class="caption Let-align">
-            <h3>Apa Kabar</h3>
+          <img src="img/slider/5.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h2 class="white-text"><strong>Apa Kabar</strong></h2>
             <h5 class="white-text  text-darken-3">Salam Sehat, Sukses,
               dan Sejahtera untuk kita semua..</h5>
           </div>
         </li>
         <li>
-          <img src="img/slider/6.jpg"> <!-- random image -->
+          <img src="img/slider/a.jpg"> <!-- random image -->
           <div class="caption center-align">
-            <h3>Kami RDC TEGAL</h3>
-            <h5 class="white-text  text-darken-3">"Kami percaya bahwa : hanya "SIMBIOSIS MUTUALISME-lah" yang dapat menjamin kelestarian sebuah "PERSAHABATAN"</h5>
+            <h2 class="white-text"><strong>Kami RDC TEGAL</strong></h>
+            <h5 class="white-text  text-lighten-3">"Kami percaya bahwa : hanya <span>"SIMBIOSIS MUTUALISME-lah"</span> yang dapat menjamin kelestarian sebuah <strong> "PERSAHABATAN"</strong></h5>
           </div>
         </li>
         <li>
-          <img src="img/slider/7.jpg"> <!-- random image -->
+          <img src="img/slider/b.jpg"> <!-- random image -->
           <div class="caption left-align">
-            <h3>Dengan Senang Hati</h3>
+            <h2 class="white-text"><strong>Dengan Senang Hati</strong></h2>
             <h5 class="white-text  text-darken-3">Kami akan selalu Memberikan Pelayanan</h5>
           </div>
         </li>
@@ -172,16 +172,16 @@
     <h3 class="light center grey-text text-darken-3">Galery RDC</h3>
     <div class="row">
       <div class="col m3 s12">
-        <img src="img/galery/1.jpg" class="responsive-img materialboxed" alt="">
+        <img src="img/galery/b.jpg" class="responsive-img materialboxed" alt="">
       </div>
       <div class="col m3 s12">
-        <img src="img/galery/2.jpg" class="responsive-img materialboxed" alt="">
+        <img src="img/galery/x.jpg" class="responsive-img materialboxed" alt="">
       </div>
       <div class="col m3 s12">
-        <img src="img/galery/3.jpg" class="responsive-img materialboxed" alt="">
+        <img src="img/galery/y.jpg" class="responsive-img materialboxed" alt="">
       </div>
       <div class="col m3 s12">
-        <img src="img/galery/4.jpg" class="responsive-img materialboxed" alt="">
+        <img src="img/galery/z.jpg" class="responsive-img materialboxed" alt="">
       </div>
     </div>
     <div class="row">
@@ -320,28 +320,29 @@
   const scriptURL = 'https://script.google.com/macros/s/AKfycbx21G53Pzxd__at9L-GSYTbb4pTJ3EPArHkcXdw0UKtg0RKl2plJ9n1YDLaKiOBvw2_/exec'
   const form = document.forms['rdc-saran-kritik']
 
-  const btnKirim = document.querySelectorAll('.btn-kirim');
-  const btnLoading = document.querySelectorAll('.btn-loading');
-  const pesanAlert = document.querySelectorAll('.pesan-alert');
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const pesanAlert = document.querySelector('.pesan-alert');
 
 
 
         form.addEventListener('submit', e => {
          e.preventDefault()
          // klik kirim
-        
+         btnLoading.classList.toggle('hide');
+         btnKirim.classList.toggle('hide');
          
         
 
          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
          .then(response => {
           // tampilkan kirim
-         // btnLoading.classList.toggle('hide');
-         // btnKirim.classList.toggle('hide');
+         btnLoading.classList.toggle('hide');
+         btnKirim.classList.toggle('hide');
          // pesan alert
-         // pesanAlert.classList.toggle('hide');
+         pesanAlert.classList.toggle('hide');
          // reset pesan
-         // form.reset();
+         form.reset();
 
           console.log('Success!', response)
         })

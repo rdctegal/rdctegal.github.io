@@ -1,7 +1,7 @@
 .slider h3,
 .slider h5,
 .biografi h1 {
-	text-shadow: 15px 15px 20px rgba(0,0,0,0.7);
+	text-shadow: 25px 15px 20px rgba(0,0,0,0.3);
 
 }
 
@@ -17,7 +17,7 @@
 .parallax img {
 	width: 100%
 	filter: grayscale(5);
-	opacity: 0.5 !important;
+	opacity: 0.7 !important;
 }
 
 .tentangkami img {
