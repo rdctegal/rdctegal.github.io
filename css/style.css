@@ -4,17 +4,20 @@
 }
 
 .slider h3,
-.slider h5,
-.tentang h3 {
+.slider h5, {
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 
 }
+
+
+
 .tentang {
  padding-top: 10px;
 }
 
 .tentang h3 {
-    margin-bottom: 10px;
+    margin-top: -10px;
+    padding-top: 10px;
 }
 
 .tentang img {
@@ -23,22 +26,31 @@
     filter: drop-shadow(1px 1px 5p rgba(0,0,0,0.8));
 }
 
-.beranda {
-    padding-top: 5px;
+.beranda h3 {
+     margin-top: -10px;
+    padding-top: 10px;
 }
 
-.galery {
+.galery h3 {
 	margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+    
 }
 
-.seminar {
+.seminar h3 {
     padding-top: 15px;
 }
 
-.contact {
-    margin-top: 20px;
-	padding-top: 30px;
+.kegiatan h3 {
+    padding-top: 20px;
+}
+
+.carousel {
+    height: 506px !important;
+}
+
+.contact h3 {
+	padding-top: 20px;
 }
 
 .materialert .close-alert{
