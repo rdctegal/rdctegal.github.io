@@ -39,10 +39,8 @@
     
 }
 
-
-#seminar.container h3 {
-    margin-top: 80px;
-    padding-bottom: 80px;
+strong .seminar {
+    border-radius: 30px;
 }
 
 .parallax-container {
