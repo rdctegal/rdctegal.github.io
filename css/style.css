@@ -24,6 +24,8 @@
     max-width: 145px;
     height: 170px;
     filter: drop-shadow(1px 1px 5p rgba(0,0,0,0.8));
+    margin: 10px auto;
+    border-top-right-radius: 30px;
 }
 
 .beranda h3 {
@@ -46,7 +48,7 @@
 }
 
 .carousel {
-    height: 506px !important;
+    height: 606px !important;
 }
 
 .contact h3 {
