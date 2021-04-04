@@ -39,8 +39,16 @@
     
 }
 
-.seminar h3 {
-    padding-top: 15px;
+
+#seminar.container h3 {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.parallax-container {
+    height: 240px;
+    padding-top: 31px;
+
 }
 
 .kegiatan h3 {
