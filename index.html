@@ -400,10 +400,12 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text"><b><i>Apa itu Milagros!</i></b></h5>
-                <p class="light grey-text text-lighten-4"><i>Penelitian menunjukkan bahwa tubuh manusia jauh lebih sering mengalami dan berpotensi menderita kelebihan asam (acidosis) dibandingkan kelebihan basa (alkalidosis). Perlu diketahui bahwa banyak penyakit disebabkan karena limbah asam tidak terbuang keluar dari tubuh dan mengendap dalam sebagian organ tubuh manusia. Ini adalah awal di mana sel di sekitarnya mulai mengalami penurunan..</i></p>
+                <p class="light grey-text text-lighten-4">Penelitian menunjukkan bahwa tubuh manusia jauh lebih sering mengalami dan berpotensi menderita kelebihan asam (acidosis) dibandingkan kelebihan basa (alkalidosis). Perlu diketahui bahwa banyak penyakit disebabkan karena limbah asam tidak terbuang keluar dari tubuh dan mengendap dalam sebagian organ tubuh manusia. Ini adalah awal di mana sel di sekitarnya mulai mengalami penurunan..</p>
               </div>
-
               <div class="col l4 offset-l2 s12">
+                <div class="view">
+                  <p>Page this</p><h2 id="count">0</h2><p>Views</p>
+                </div>
                 <h6 class="white-text lighten-3"><strong>Jam Operasional</strong></h6>
                 <ul>
                   <li><b>Senin s/d Jum'at</b></li>
@@ -413,9 +415,6 @@
                   <li>09:00-14:00 WIB</li>
                   <br>
                    <li><b>Minggu &emsp;</b> <i class="red-text"><b>Libur</b></i></li>
-                   <div class="view">
-                  <p>Page this</p><h2 id="count">0</h2><p>Views</p>
-                </div>
                 </ul>
               </div>
             </div>
@@ -474,7 +473,18 @@
           scrollOffset: 50
         });
 
-        
+        const countEl = document.getElementById('count');
+
+        updateVisitCount();
+
+        function updateVisitCount() {
+          fetch('https://api.countapi.xyz/update/rdctegal.github.io/youtube/?amount=1')
+          .then(res => res.json())
+          .then(res => {
+            countEl.innerHTML = res.value;
+          });
+        }
+
 
 
 
